@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const needHelpRoutes = require('./routes/needHelpRoutes');
+const commentRoutes = require('./routes/commentRoutes');
 const cors = require('cors');
 
 const app = express();
@@ -31,6 +32,7 @@ app.use(bodyParser.json());
 
 // Define Routes
 app.use('/api', needHelpRoutes);
+app.use('/api', commentRoutes);
 
 const PORT = process.env.PORT || 5000;
 
