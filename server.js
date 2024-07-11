@@ -3,12 +3,11 @@ const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const needHelpRoutes = require('./routes/needHelpRoutes');
 const commentRoutes = require('./routes/commentRoutes');
+const blogRoutes = require('./routes/blogRoutes');
+const adminRoutes = require('./routes/adminRoutes')
 const cors = require('cors');
 
 const app = express();
-
-
-
 
 // Enable All CORS Requests
 app.use(cors());
@@ -33,6 +32,8 @@ app.use(bodyParser.json());
 // Define Routes
 app.use('/api', needHelpRoutes);
 app.use('/api', commentRoutes);
+app.use('/api', blogRoutes);
+app.use('/api', adminRoutes)
 
 const PORT = process.env.PORT || 5000;
 

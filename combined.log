@@ -1,0 +1,11 @@
+2024-07-11 13:38:41 [undefined] info: Admin created successfully
+2024-07-11 13:40:39 [undefined] error: Error logging in admin:
+2024-07-11 13:44:48 [undefined] error: Error logging in admin:
+2024-07-11 13:46:48 [undefined] error: Error logging in admin:
+2024-07-11 13:50:20 [undefined] error: Error logging in admin:
+{"error":"secretOrPrivateKey must have a value","level":"error","message":"Error logging in admin:"}
+{"adminId":"668f9840f2bbccffe28f8d3c","level":"info","message":"Admin created successfully"}
+{"error":"secretOrPrivateKey must have a value","level":"error","message":"Error logging in admin:"}
+{"error":"secretOrPrivateKey must have a value","level":"error","message":"Error logging in admin:"}
+{"error":"secretOrPrivateKey must have a value","level":"error","message":"Error logging in admin:"}
+{"adminId":"668f9840f2bbccffe28f8d3c","level":"info","message":"Admin logged in successfully"}
